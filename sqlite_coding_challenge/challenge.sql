@@ -27,8 +27,7 @@ WHERE e.salary > dept_avgs.avg_salary
 ORDER BY d.name ASC, e.salary DESC;
 
 SELECT 
-    city, 
-    COUNT(*) AS gold_customer_count
+    city, COUNT(*) AS gold_customer_count
 FROM customers
 WHERE loyalty_level = 'Gold'
 GROUP BY city
